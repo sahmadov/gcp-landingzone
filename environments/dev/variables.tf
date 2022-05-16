@@ -2,6 +2,12 @@ variable "project_id" {
   description = "The project ID to host the cluster in"
   default     = "landing-zone-for-dev"
 }
+
+variable "org_id" {
+  description = "The organization ID of project"
+  default     = "1045437797549"
+}
+
 variable "cluster_name" {
   description = "The name for the GKE cluster"
   default     = "gke-cluster"

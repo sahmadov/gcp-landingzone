@@ -3,6 +3,12 @@ provider "google" {
   region  = var.region
 }
 
+resource "google_project" "landing-zone-dev-name" {
+  name       = var.project_id
+  project_id = var.project_id
+  org_id     = "1045437797549"
+}
+
 resource "local_file" "kubeconfig" {
   content  = module.gke_auth.kubeconfig_raw
   filename = "kubeconfig-${var.env_name}"

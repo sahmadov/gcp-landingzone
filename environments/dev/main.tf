@@ -6,7 +6,7 @@ provider "google" {
 resource "google_project" "landing-zone-dev-name" {
   name       = var.project_id
   project_id = var.project_id
-  org_id     = "1045437797549"
+  org_id     = var.org_id
 }
 
 resource "local_file" "kubeconfig" {

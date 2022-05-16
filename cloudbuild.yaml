@@ -1,6 +1,6 @@
 
 steps:
-  - id: 'branch name'
+  - id: 'branch name prompt'
     name: 'alpine'
     entrypoint: 'sh'
     args:
@@ -66,3 +66,5 @@ steps:
           echo "*******************************************************************************"
         fi
 # [END tf-apply]
+options:
+  logging: CLOUD_LOGGING_ONLY

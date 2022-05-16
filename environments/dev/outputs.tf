@@ -1,4 +1,4 @@
-output "project_name" {
-  description = "Name of created Project is listed below"
-  value       = google_project.landing-zone-dev-name.name
+output "cluster_name" {
+  description = "Cluster name"
+  value       = module.gke.name
 }

@@ -42,3 +42,11 @@ variable "ip_range_services_name" {
   description = "The secondary ip range to use for services"
   default     = "ip-range-services"
 }
+
+variable "helm_account_name" {
+  default = "helm"
+}
+
+variable "helm_version" {
+  default = "v3.8.2"
+}
